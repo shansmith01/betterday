@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children, data }) => {
   return (
     <div className='App'>
       <Helmet title={data.site.siteMetadata.title} />
-      <div className='navbar navbar-expand-lg navbar-dark bg-dark'>
+      <div className='navbar navbar-expand-sm navbar-dark bg-dark'>
         <Container>
           <Link to='/' className='navbar-brand'>{data.site.siteMetadata.title}</Link>
           <ul className='nav navbar-nav'>
@@ -32,12 +32,26 @@ const TemplateWrapper = ({ children, data }) => {
             )}
 
             <li className='nav-item'>
+              <Link to='/about' className='nav-link'>Features</Link>
+            </li>
+
+            <li className='nav-item'>
               <Link to='/about' className='nav-link'>About</Link>
             </li>
+
+            <li className='nav-item'>
+              <Link to='/about' className='nav-link'>Blog</Link>
+            </li>
+
+            <li className='nav-item'>
+              <Link to='/about' className='nav-link btn btn-primary btn-small'>Book Demo</Link>
+            </li>
+
           </ul>
         </Container>
       </div>
       <div className='pageContent'>{children()}</div>
+      <div className='footer'>A footer here</div>
     </div>
   )
 }
