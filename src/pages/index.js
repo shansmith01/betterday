@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Jumbotron, Col, Row } from 'reactstrap'
+import { Container, Jumbotron, Col, Row, Button } from 'reactstrap'
 import Link from 'gatsby-link'
 import graphql from 'graphql'
 
@@ -23,8 +23,57 @@ const IndexPage = () => {
       <Container fluid="fluid" className="text-center bg-secondary py-5">
        <Row>
         <Col>
-          <h2 className="display-5">Let the science do the work</h2>
+          <h2 className="display-4">Let the science do the work</h2>
           <p className="lead">Better Day focuses on the seven areas scientifically proven to people be at their best.*</p>
+          
+          <Row className="mt-5">
+            <Col>
+              <h3>Relationships</h3>
+              <p>Build connected, supportive relationships at home and at work.</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+            <Col>
+              <h3>Work Difficulties</h3>
+              <p>Get controll over day to day stressors at work</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+            <Col>
+              <h3>Life Chellenges</h3>
+              <p>Get balanace back into your home life</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+            <Col>
+              <h3>Purpose</h3>
+              <p>Make sure life matches wat you believe to be worthwhile</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+          </Row>
+
+          <Row className="mt-5">
+            <Col>
+              <h3>Own Emotions</h3>
+              <p>Help manage the negative and positive emotions you face everyday</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+            <Col>
+              <h3>Positive Thinking</h3>
+              <p>Foster useful postive thinking to solve problems</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+            <Col>
+              <h3>Health</h3>
+              <p>Give them the mental strength needed to reach reach their physical goals</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+            <Col>
+              <h3>I need one more</h3>
+              <p>becuase it looks prettier on the website, but if not we can do without</p>
+              <Button outline color="primary">Learn more</Button>
+            </Col>
+          </Row>
+
+
+
         </Col>
        </Row>
       </Container>
