@@ -3,6 +3,7 @@ module.exports = {
     title: 'Better Day',
     author: 'konsumer',
     authorLink: 'https://github.com/konsumer',
+    disqus: 'gatsby-starter-blog'// put your disqus ID here
     
   },
   plugins: [
@@ -31,6 +32,7 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    `gatsby-plugin-styled-components`
   ]
 }

@@ -1,7 +1,8 @@
 import React from 'react'
-import { Container, Jumbotron, Col, Row, Button } from 'reactstrap'
+import { Container, Jumbotron, Col, Row, Button, Card, CardTitle, CardBody, CardText } from 'reactstrap'
 import Link from 'gatsby-link'
 import graphql from 'graphql'
+import FeatureCard from '../components/FeatureCard'
 
 const IndexPage = () => {
   
@@ -28,9 +29,12 @@ const IndexPage = () => {
           
           <Row className="mt-5">
             <Col>
-              <h3>Relationships</h3>
-              <p>Build connected, supportive relationships at home and at work.</p>
-              <Button outline color="primary">Learn more</Button>
+
+               <FeatureCard 
+                  title="Relationships"
+                  text="Build connected, supportive relationships at home and at work."
+               />
+
             </Col>
             <Col>
               <h3>Work Difficulties</h3>
