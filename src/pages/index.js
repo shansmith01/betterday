@@ -27,56 +27,43 @@ const IndexPage = () => {
           <h2 className="display-4">Let the science do the work</h2>
           <p className="lead">Better Day focuses on the seven areas scientifically proven to people be at their best.*</p>
           
-          <Row className="mt-5">
-            <Col>
-
-               <FeatureCard 
+          <div className="mt-5 card-deck">
+            <FeatureCard 
                   title="Relationships"
                   text="Build connected, supportive relationships at home and at work."
                />
+            <FeatureCard 
+                  title="Work Difficulties"
+                  text="Get controll over day to day stressors at work."
+               />
+            <FeatureCard 
+                  title="Life Chellenges"
+                  text="Get balanace back into your home life."
+               />
+            <FeatureCard 
+                  title="Purpose"
+                  text="Make sure life matches wat you believe to be worthwhile."
+               />
+          </div>
 
-            </Col>
-            <Col>
-              <h3>Work Difficulties</h3>
-              <p>Get controll over day to day stressors at work</p>
-              <Button outline color="primary">Learn more</Button>
-            </Col>
-            <Col>
-              <h3>Life Chellenges</h3>
-              <p>Get balanace back into your home life</p>
-              <Button outline color="primary">Learn more</Button>
-            </Col>
-            <Col>
-              <h3>Purpose</h3>
-              <p>Make sure life matches wat you believe to be worthwhile</p>
-              <Button outline color="primary">Learn more</Button>
-            </Col>
-          </Row>
-
-          <Row className="mt-5">
-            <Col>
-              <h3>Own Emotions</h3>
-              <p>Help manage the negative and positive emotions you face everyday</p>
-              <Button outline color="primary">Learn more</Button>
-            </Col>
-            <Col>
-              <h3>Positive Thinking</h3>
-              <p>Foster useful postive thinking to solve problems</p>
-              <Button outline color="primary">Learn more</Button>
-            </Col>
-            <Col>
-              <h3>Health</h3>
-              <p>Give them the mental strength needed to reach reach their physical goals</p>
-              <Button outline color="primary">Learn more</Button>
-            </Col>
-            <Col>
-              <h3>I need one more</h3>
-              <p>becuase it looks prettier on the website, but if not we can do without</p>
-              <Button outline color="primary">Learn more</Button>
-            </Col>
-          </Row>
-
-
+          <div className="mt-5 card-deck">
+            <FeatureCard 
+                  title="Own Emotions"
+                  text="Help manage the negative and positive emotions you face everyday."
+               />
+            <FeatureCard 
+                  title="Positive Thinking"
+                  text="Foster useful postive thinking to solve problems."
+               />
+            <FeatureCard 
+                  title="Health"
+                  text="Give them the mental strength needed to reach reach their physical goals."
+               />
+            <FeatureCard 
+                  title="I need one more"
+                  text="becuase it looks prettier on the website, but if not we can do without"
+               />
+          </div>
 
         </Col>
        </Row>
