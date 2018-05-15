@@ -5,28 +5,38 @@ import graphql from 'graphql'
 import FeatureCard from '../components/FeatureCard'
 import Img from "gatsby-image"
 
-const IndexPage = () => {
+const IndexPage = ({data}) => {
   
   return (
     <div>
-      <Container>
+      <Container fluid className="lightblue">
         <Row>
           <Col>
-          <Jumbotron className="mt-5">
-            <h1 className="display-4">A better way to build strong people</h1>
+          <div className="mt-5 pt-5 darkblue">
+          
+            <h1 className="display-4">Once their heads are out of the sand your people can achieve amazing things</h1>
             <p className="lead">We help you build a reslient workforce so that your people can reach their potential at work and at home.</p>
-          </Jumbotron>
+            <Button outline color="primary">Learn more</Button>
+            
+          </div>
+
             </Col>
-          <Col></Col>
+          <Col>
+          <Img
+      title="Header image"
+      alt="Greek food laid out on table"
+      sizes={data.headerImage.sizes}
+    />
+          </Col>
         </Row>
 
       </Container>
 
-      <Container fluid="fluid" className="text-center bg-secondary py-5">
+      <Container fluid className="text-center py-5 darkbluebg">
        <Row>
         <Col>
           <h2 className="display-4">Let the science do the work</h2>
-          <p className="lead">Better Day focuses on the seven areas scientifically proven to help people be at their best.*</p>
+          <p className="lead">Better Day App focuses on the seven areas scientifically proven to help people be at their best.*</p>
           
           <div className="mt-5 card-deck">
             <FeatureCard 
@@ -70,8 +80,13 @@ const IndexPage = () => {
       <Container className="text-center py-5">
        <Row>
         <Col>
-          <h2 className="display-5">We help you understand where your team's heads are at</h2>
+          <h2 className="display-5">We help you better understand your people</h2>
           <p className="lead">If you are not measuring it you can't improve. We give you the tools so you can understand your teams successes and strugles and clearly report this back to you.</p>
+          <Img
+      title="Header image"
+      alt="Greek food laid out on table"
+      sizes={data.dashboardImage.sizes}
+    />
         </Col>
        </Row>
       </Container>
@@ -81,3 +96,17 @@ const IndexPage = () => {
 
 export default IndexPage
 
+export const pageQuery = graphql`
+  query HeaderImageQuery {
+    dashboardImage: imageSharp(id: { regex: "/dashboard.png/" }) {
+      sizes(maxWidth: 1240 ) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+    headerImage: imageSharp(id: { regex: "/ost.jpg/" }) {
+      sizes(maxWidth: 500 ) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`

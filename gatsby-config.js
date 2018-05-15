@@ -30,6 +30,13 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/img/`
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

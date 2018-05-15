@@ -50,8 +50,11 @@ const TemplateWrapper = ({ children, data }) => {
           </ul>
         </Container>
       </div>
-      <div className='pageContent'>{children()}</div>
+      <div className='pageContent'>{children()}
+      
       <div className='footer'>A footer here</div>
+      </div>
+      
     </div>
   )
 }
