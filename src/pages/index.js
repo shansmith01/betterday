@@ -9,7 +9,7 @@ const IndexPage = ({data}) => {
   
   return (
     <div>
-      <Container fluid className="lightblue">
+      <Container className="lightblue">
         <Row>
           <Col>
           <div className="mt-5 pt-5 darkblue">
@@ -76,8 +76,7 @@ const IndexPage = ({data}) => {
        </Row>
       </Container>
 
-
-      <Container className="text-center py-5">
+      <Container className="text-center py-5 darkblue ">
        <Row>
         <Col>
           <h2 className="display-5">We help you better understand your people</h2>

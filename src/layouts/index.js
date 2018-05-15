@@ -20,7 +20,7 @@ const TemplateWrapper = ({ children, data }) => {
   return (
     <div className='App'>
       <Helmet title={data.site.siteMetadata.title} />
-      <div className='navbar navbar-expand-sm navbar-dark bg-dark'>
+      <div className='navbar navbar-expand-sm navbar-dark'>
         <Container>
           <Link to='/' className='navbar-brand'>{data.site.siteMetadata.title}</Link>
           <ul className='nav navbar-nav'>
