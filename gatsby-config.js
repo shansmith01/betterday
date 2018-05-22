@@ -24,6 +24,32 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+      }
+      },
+      {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
+          name: "Better Day",
+          short_name: "Better Day",
+          start_url: "/",
+          background_color: "#2F3E51",
+          theme_color: "#2F3E51",
+          display: "minimal-ui",
+          icon: "src/images/icon.png", // This path is relative to the root of the site.
+        }
+        },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
