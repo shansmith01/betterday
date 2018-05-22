@@ -65,38 +65,3 @@ export default function Template ({ data }) {
   )
 }
 
-export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    site {
-      siteMetadata {
-        disqus
-      }
-    }
-    
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        path
-        date(formatString: "MMMM DD, YYYY")
-        title
-        attachments {
-          filename
-        }
-        related {
-          post
-        }
-      }
-    }
-
-    allMarkdownRemark{
-      edges{
-        node{
-          frontmatter{
-            title
-            path
-          }
-        }
-      }
-    }
-  }
-`

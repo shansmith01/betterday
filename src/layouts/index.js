@@ -26,15 +26,15 @@ const TemplateWrapper = ({ children, data }) => {
           <ul className='nav navbar-nav'>
 
             <li className='nav-item'>
-              <Link to='/leaders' className='nav-link'>For leaders</Link>
+              <Link to='/leaders' className='nav-link' activeClassName="active">For leaders</Link>
             </li>
 
             <li className='nav-item'>
-              <Link to='/employees' className='nav-link'>For Employees</Link>
+              <Link to='/employees' className='nav-link' activeClassName="active">For Employees</Link>
             </li>
 
             <li className='nav-item'>
-              <Link to='/about' className='nav-link'>About</Link>
+              <Link to='/about' className='nav-link' activeClassName="active">About</Link>
             </li>
 
             <li className='nav-item'>
