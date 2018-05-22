@@ -16,7 +16,9 @@ const IndexPage = ({data}) => {
           
             <h1 className="display-4">Once their heads are out of the sand your people can achieve amazing things</h1>
             <p className="lead">We help you build a reslient workforce so that your people can reach their potential at work and at home.</p>
-            <Button outline color="primary">Learn more</Button>
+            <Link to="/leaders/">
+              <Button outline color="primary">Learn more</Button>
+            </Link>
             
           </div>
 

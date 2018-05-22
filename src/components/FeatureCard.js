@@ -8,7 +8,7 @@ const FeatureCard = props => (
   	<CardBody>
   		<CardTitle>{props.title}</CardTitle>
   		<CardText>{props.text}</CardText>
-  		<Button outline color="primary">Learn more</Button>
+  		{/* <Button outline color="primary">Learn more</Button> */}
   	</CardBody>
   </Card>
 
