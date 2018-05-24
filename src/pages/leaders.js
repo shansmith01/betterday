@@ -12,8 +12,8 @@ const LeadersPage = ({data}) => {
       <Container>
        <Row>
         <Col>
-          <h1 className="display-4">Truley know how your team feels and understand what drives them</h1>
-          <p className="lead mb-4">Our personal and profesional lives are intertwined. To get the most out of your people, they need to have balance. We give you the tools to measure how your people feel and the tools to help them perfom at their best at work and at home.</p>
+          <h1 className="display-4">Get a true sense of your teams wellbeing</h1>
+          <p className="lead mb-4">Our personal and profesional lives are intertwined. To get the most out of your people, they need to have balance. We give you the tools to measure how your teams wellbeing and to help them perfom at their best at work and at home.</p>
           <Img
       title="Header image"
       alt="Greek food laid out on table"

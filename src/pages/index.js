@@ -38,7 +38,7 @@ const IndexPage = ({data}) => {
        <Row>
         <Col>
           <h2 className="display-4">Let the science do the work</h2>
-          <p className="lead">Better Day App focuses on the seven areas scientifically proven to help people be at their best.*</p>
+          <p className="lead">Better Day App focuses on the seven areas scientifically proven to help inprove your teams wellbeing.*</p>
           
           <div className="mt-5 card-deck">
             <FeatureCard 

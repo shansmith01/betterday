@@ -37,18 +37,6 @@ module.exports = {
         exclude: ["/preview/**", "/do-not-track/me/too/"],
       }
       },
-      {
-        resolve: `gatsby-plugin-manifest`,
-        options: {
-          name: "Better Day",
-          short_name: "Better Day",
-          start_url: "/",
-          background_color: "#2F3E51",
-          theme_color: "#2F3E51",
-          display: "minimal-ui",
-          icon: "src/images/icon.png", // This path is relative to the root of the site.
-        }
-        },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
