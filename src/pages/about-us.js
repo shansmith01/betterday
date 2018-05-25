@@ -36,9 +36,7 @@ const AboutPage = ({data}) => {
             <Form 
             name="Contact" 
             method="POST" 
-            action="thank-you" 
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
             >
            <FormGroup>
             <Label for="exampleEmail">Email</Label>
