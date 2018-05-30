@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 import PropTypes from 'prop-types'
 import graphql from 'graphql'
 import Link from 'gatsby-link'
@@ -46,7 +46,29 @@ const TemplateWrapper = ({ children, data }) => {
       </div>
       <div className='pageContent'>{children()}
       
-      <div className='footer'>A footer here</div>
+      <Container fluid className="darkbluebg py-5">
+      <Container>
+        <Row>
+          <Col md="4" className="mb-3">
+            <h2>Product</h2>
+            <div><Link to='/leaders'>For Leaders</Link></div>
+            <div><Link to='/employees'>For Employees</Link></div>
+            <div><Link to='/demo'>Request A Demo</Link></div>
+          </Col>
+          <Col md="4" className="mb-3">
+          <h2>Other Goodness</h2>
+          <div><Link to='/about'>About us</Link></div>
+          <div><Link to='/support'>Support</Link></div>
+          <div><Link to='/privacy'>Privacy Policy</Link></div>
+          <div><Link to='/cookies'>Cookie Policy</Link></div>
+          </Col>
+          <Col md="4" className="mb-3">
+            <h2>Keep in Touch</h2>
+            <div><Link to='contact-us'>Contact us</Link></div>
+          </Col>
+        </Row>
+        </Container>
+      </Container>
       </div>
       
     </div>
