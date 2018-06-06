@@ -11,7 +11,7 @@ const IndexPage = ({data}) => {
     <div>
       <Container className="lightblue">
         <Row>
-          <Col>
+          <Col md="6">
           <div className="mt-5 pt-5 darkblue">
           
             <h1 className="display-4">Once their heads are out of the sand your people can achieve amazing things</h1>
@@ -23,7 +23,7 @@ const IndexPage = ({data}) => {
           </div>
 
             </Col>
-          <Col>
+          <Col md="6">
           <Img
       title="Header image"
       alt="Greek food laid out on table"
