@@ -23,7 +23,7 @@ const DemoPage = ({data}) => {
           </Col>
           <Col md={{ size: 5, offset: 1 }} >
             <Form 
-            name="Contact" 
+            name="demo" 
             method="POST" 
             data-netlify="true"
             >
