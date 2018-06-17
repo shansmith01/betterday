@@ -27,7 +27,7 @@ const ContactPage = ({data}) => {
             >
            <FormGroup>
             <Label for="exampleEmail">Email</Label>
-            <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+            <Input type="email" name="email" id="exampleEmail" placeholder="email@email.com" />
           </FormGroup>
             
             <FormGroup>
@@ -50,4 +50,6 @@ const ContactPage = ({data}) => {
 }
 
 export default ContactPage
+
+
 

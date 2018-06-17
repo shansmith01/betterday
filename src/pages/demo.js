@@ -23,24 +23,24 @@ const DemoPage = ({data}) => {
           </Col>
           <Col md={{ size: 5, offset: 1 }} >
             <Form 
-            name="demo" 
+            name="Demo" 
             method="POST" 
             data-netlify="true"
             >
 
           <FormGroup>
             <Label for="name">Your name</Label>
-            <Input type="text" name="name" id="name" placeholder="Bill Smith"/>
+            <Input type="text" name="name" />
           </FormGroup>
 
            <FormGroup>
             <Label for="email">Email</Label>
-            <Input type="email" name="email" id="email" placeholder="bill@bill.com"/>
+            <Input type="email" name="email"/>
           </FormGroup>
 
           <FormGroup>
             <Label for="company">Company</Label>
-            <Input type="text" name="company" id="company" placeholder="Bill's Company"/>
+            <Input type="text" name="company"/>
           </FormGroup>
             
 
