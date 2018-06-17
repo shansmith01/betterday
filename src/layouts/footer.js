@@ -16,10 +16,8 @@ const Footer = props => (
         </Col>
         <Col md="4" className="mb-3">
         <h2>Other Goodness</h2>
-        <div><Link to='/about'>About us</Link></div>
-        <div><Link to='/support'>Support</Link></div>
+        <div><Link to='/about-us'>About us</Link></div>
         <div><Link to='/privacy'>Privacy Policy</Link></div>
-        <div><Link to='/cookies'>Cookie Policy</Link></div>
         </Col>
         <Col md="4" className="mb-3">
           <h2>Keep in Touch</h2>

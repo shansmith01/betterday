@@ -29,17 +29,17 @@ const DemoPage = ({data}) => {
             >
 
           <FormGroup>
-            <Label for="exampleEmail">Your name</Label>
+            <Label for="name">Your name</Label>
             <Input type="text" name="name" id="name" placeholder="Bill Smith" required />
           </FormGroup>
 
            <FormGroup>
-            <Label for="exampleEmail">Email</Label>
+            <Label for="email">Email</Label>
             <Input type="email" name="email" id="email" placeholder="bill@bill.com" required/>
           </FormGroup>
 
           <FormGroup>
-            <Label for="exampleEmail">Company</Label>
+            <Label for="compnay">Company</Label>
             <Input type="text" name="company" id="company" placeholder="Bill's Company" required/>
           </FormGroup>
             
