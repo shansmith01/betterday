@@ -9,11 +9,7 @@ const AboutCard = props => (
 
   <Card>
   	<CardBody>
-		<Img
-      title={props.personName}
-      alt={props.personName}
-      sizes={data.personImage.sizes}
-    />
+
   		<CardTitle>{props.personName}</CardTitle>
   		<CardText>{props.text}</CardText>
   	</CardBody>
@@ -24,12 +20,3 @@ const AboutCard = props => (
 export default AboutCard;
 
 
-export const pageQuery = graphql`
-  query PersonImageQuery {
-    personImage: imageSharp(id: { regex: "allanah.jpg" }) {
-      sizes(maxWidth: 1240 ) {
-        ...GatsbyImageSharpSizes
-      }
-    }
-  }
-`

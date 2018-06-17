@@ -39,7 +39,7 @@ const TemplateWrapper = ({ children, data }) => {
             </li>
 
             <li className='nav-item'>
-              <Link to='/about' className='nav-link btn btn-primary btn-small'>Book Demo</Link>
+              <Link to='/demo' className='nav-link btn btn-primary btn-small'>Book Demo</Link>
             </li>
 
           </ul>

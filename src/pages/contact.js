@@ -20,7 +20,6 @@ const ContactPage = ({data}) => {
       <Container>
         <Row>
           <Col >
-            <h2>Contact Us</h2>
             <Form 
             name="Contact" 
             method="POST" 
