@@ -24,6 +24,7 @@ const ContactPage = ({data}) => {
             name="Contact" 
             method="POST" 
             data-netlify="true"
+            action="/thanks"
             >
            <FormGroup>
             <Label for="exampleEmail">Email</Label>
