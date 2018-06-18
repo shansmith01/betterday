@@ -26,7 +26,6 @@ const DemoPage = ({data}) => {
             name="Demo" 
             method="POST" 
             data-netlify="true"
-            action="/thanks"
             >
 
           <FormGroup>
