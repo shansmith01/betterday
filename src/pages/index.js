@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from "react-helmet"
 import { Container, Jumbotron, Col, Row, Button, Card, CardTitle, CardBody, CardText } from 'reactstrap'
 import Link from 'gatsby-link'
 import graphql from 'graphql'
@@ -9,13 +10,18 @@ const IndexPage = ({data}) => {
   
   return (
     <div>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>Enterprise Workplace resilience software</title>
+                <meta name="description" content="We help you build a resilient workforce so that your people can reach their potential at work and at home. Learn more now" />
+         </Helmet>
       <Container className="lightblue">
         <Row>
           <Col md="6">
           <div className="mt-5 pt-5 darkblue">
           
-            <h1 className="display-4">Once their heads are out of the sand your people can achieve amazing things</h1>
-            <p className="lead">We help you build a resilient workforce so that your people can reach their potential at work and at home.</p>
+            <p className="display-4">Once their heads are out of the sand your people can achieve amazing things</p>
+            <h1 className="lead">We help your workplace build a resilient workforce so that your people can reach their potential at work and at home.</h1>
             <Link to="/leaders/">
               <Button outline color="primary">Learn more</Button>
             </Link>

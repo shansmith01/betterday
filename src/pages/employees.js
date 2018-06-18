@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from "react-helmet"
 import { Container, Jumbotron, Col, Row, Button, Card, CardTitle, CardBody, CardText } from 'reactstrap'
 import Link from 'gatsby-link'
 import graphql from 'graphql'
@@ -8,7 +9,11 @@ const EmployeePage = ({data}) => {
   
   return (
     <div>
-
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Enterprise Mental health coach</title>
+                <meta name="description" content="We help build workplace resilience in your team. Our Mental health coach helps your team perform" />
+         </Helmet>
       <Container fluid className="text-center darkbluebg p-5">
         <Container>
           <Row>

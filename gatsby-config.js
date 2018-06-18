@@ -26,6 +26,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sitemap`
+      options: {
+        exclude: [`/privacy`, `/thanks`, `/contact`],
+      }
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
