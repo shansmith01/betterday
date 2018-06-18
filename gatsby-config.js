@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Better Day',
+    siteUrl: `https://betterday.co`,
     author: 'konsumer',
     authorLink: 'https://github.com/konsumer',
     disqus: 'gatsby-starter-blog'// put your disqus ID here
@@ -22,6 +23,9 @@ module.exports = {
           'gatsby-remark-copy-linked-files'
         ]
       }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -49,6 +53,7 @@ module.exports = {
     'gatsby-plugin-sass',
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    
   ]
 }
